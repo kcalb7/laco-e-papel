@@ -1,0 +1,26 @@
+{
+  "name": "laco-e-papel",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Laço & Papel - Papelaria Personalizada & Afetiva",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcalb7/laco-e-papel.git"
+  },
+  "keywords": [
+    "laco-e-papel",
+    "papelaria",
+    "landing-page"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.3.4"
+  }
+}
