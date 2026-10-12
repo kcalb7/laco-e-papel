@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cleanPhone = String(rawPhone).replace(/\D/g, '');
 
   const getWhatsappUrl = (customText) => {
-    const defaultText = 'Olá! Gostaria de solicitar um orçamento com a Laço & Papel ♥';
+    const defaultText = 'Olá! Gostaria de solicitar um orçamento com a Laço & Papel';
     const message = encodeURIComponent(customText || defaultText);
     return cleanPhone 
       ? `https://wa.me/${cleanPhone}?text=${message}`
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="https://wa.me"]').forEach((link) => {
     const context = link.getAttribute('data-product');
     const customMessage = context 
-      ? `Olá! Gostaria de solicitar um orçamento para ${context} com a Laço & Papel ♥`
+      ? `Olá! Gostaria de solicitar um orçamento para ${context} com a Laço & Papel`
       : null;
     link.href = getWhatsappUrl(customMessage);
   });
